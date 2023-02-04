@@ -1,0 +1,50 @@
+.about {
+    padding: 100px 0;
+    
+    &_gray {
+        background-color: $color-gray;
+    }
+
+    .wrapper {
+        @include flexColumn;
+        text-align: center;
+        align-items: center;
+        row-gap: 57px;
+    }
+
+    &__advantages {
+        @include advantagesContainer;
+    }
+
+    .advantage {
+        color: $color-primary;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 540px;
+        @include flexColumn;
+        row-gap: 50px;
+    }
+
+    &__video {
+        align-self: stretch;
+
+        video {
+            width: 100%;
+            // aspect-ratio: 16 / 9;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 50px 0;
+
+        .wrapper {
+            row-gap: 30px;
+        }
+
+        &__text {
+            row-gap: 25px;
+        }
+    }
+}

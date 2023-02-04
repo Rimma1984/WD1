@@ -1,0 +1,25 @@
+.button {
+    height: 55px;
+    padding: 0 41px;
+    @include elementCentred;
+    border: none;
+    background-color: $color-button-primary;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-button-primary-active;
+    }
+
+    &_light {
+        color: $color-primary;
+        background-color: $color-white;
+
+        &:hover {
+            background-color: $color-gray;
+        }
+    }
+}

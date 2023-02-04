@@ -1,0 +1,17 @@
+@mixin elementCentred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin advantagesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
