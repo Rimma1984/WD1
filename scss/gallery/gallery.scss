@@ -1,0 +1,15 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    &__item {
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 1 / 1;
+
+        img {
+            width: 1px;
+            opacity: 0;
+        }
+    }
+}
