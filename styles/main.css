@@ -633,10 +633,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   opacity: 0;
 }
-.gallery__item:hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.gallery__item:hover::before {
+  opacity: 0.5;
 }
 
 .footer {
