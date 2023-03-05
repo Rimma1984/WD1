@@ -1,0 +1,27 @@
+.popup {
+    background-color: $color-popup;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    &__body {
+        background-color: $color-gray;
+        width: 672px;
+        height: 660px;
+        position: relative;
+    }
+
+    &__close {
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+}

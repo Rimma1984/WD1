@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -33,6 +33,7 @@
             <a href="index.html" class="header__logo">
                 <img src="images/logo.svg" alt="Logotype">
             </a>
+            <button class="header__burger"></button>
             <nav class="header__nav">
                 <ul>
                     <li><a href="#" class="header__item header__item_active">Главная</a></li>
@@ -56,7 +57,7 @@
                     <h1>Дизайн и верстка</h1>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    <button class="button">Написать мне</button>
+                    <button class="button" data-popup=".popup_form">Написать мне</button>
                 </div>
             </div>
         </section>
@@ -211,6 +212,35 @@
         <img src="images/img8.jpg" alt="">
         </a>
     </section>
+    <section class="partners">
+        <div class="wrapper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/microsoft.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/ibm.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/amazon.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/MasterCard.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/youtube.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/visa.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/win10.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__info">
@@ -224,12 +254,16 @@
             </div>
         </div>
     </footer>
+    <div class="popup popup_form">
+        <div class="popup__body">
+            <h1>hello</h1>
+            <button class="popup__close">
+                <img src="images/button-clouz.svg" alt="">
+            </button>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-<div class="button button__popup">
-    <button class="">
-        <img src="images/button-clouz.svg" alt="">
-    </button>
-</div>
-
 </html>

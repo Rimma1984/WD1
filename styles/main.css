@@ -425,10 +425,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 36px 0;
   }
   .header__nav {
+    display: none;
     text-align: center;
+  }
+  .header__nav_active {
+    display: block;
   }
   .header__nav ul {
     flex-direction: column;
+  }
+}
+.header__burger {
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/burgerMenu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  border: none;
+}
+.header__burger_active {
+  background-image: url("../images/close.svg");
+}
+@media (max-width: 576px) {
+  .header__burger {
+    display: block;
   }
 }
 
@@ -683,6 +704,39 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     row-gap: 4px;
   }
+}
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.popup__body {
+  background-color: #EEEFF1;
+  width: 672px;
+  height: 660px;
+  position: relative;
+}
+.popup__close {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.partners {
+  margin: 85px;
+}
+.partners .swiper {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
